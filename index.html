@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VOID — premium streetwear for after dark.">
+  <title>VOID — Premium Streetwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="announcement">FREE PH SHIPPING OVER ₱3,000 <span>— financially responsible? debatable.</span></div>
+
+  <header class="nav">
+    <a href="#home" class="logo brand-logo"><img src="images/void-logo.png" alt="VOID logo"><span>VOID</span></a>
+    <nav class="desktop-nav">
+      <a href="#drop">New Drop</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">♡ <span id="wishCount">0</span></button>
+      <button class="cart-btn" id="cartBtn">BAG <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">VOID / DROP 001 / 2026</p>
+        <h1>MADE FOR<br>THE HOURS<br>AFTER DARK.</h1>
+        <p class="hero-sub">Premium streetwear built around oversized silhouettes, washed tones and pieces that speak before you do.</p>
+        <a class="primary-btn" href="#shop">SHOP THE DROP <span>↗</span></a>
+      </div>
+      <div class="hero-art editorial-hero"><img src="images/free-spirit-hoodie.png" alt="VOID black hoodie editorial"><div class="hero-logo-stamp"><img src="images/void-logo.png" alt="VOID mark"></div><p class="vertical-copy">LIMITED QUANTITIES // NO RESTOCK PROMISES</p></div>
+      <div class="scroll-note">SCROLL TO ENTER ↓</div>
+    </section>
+
+    <section class="ticker">
+      <div>HEAVYWEIGHT • OVERSIZED • LIMITED • VOID • AFTER DARK • HEAVYWEIGHT • OVERSIZED • LIMITED • VOID • AFTER DARK •</div>
+    </section>
+
+    <section class="drop-section" id="drop">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / THE CURRENT OBSESSION</p>
+          <h2>DROP 001<br><span>AFTER DARK</span></h2>
+        </div>
+        <p>Built around oversized silhouettes, washed blacks, heavy fabrics, and the universal need to look expensive while getting iced coffee.</p>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="shop-top">
+        <h2>SHOP ALL <sup id="productTotal">06</sup></h2>
+        <div class="filters">
+          <button class="filter active" data-filter="all">ALL</button>
+          <button class="filter" data-filter="tees">TEES</button>
+          <button class="filter" data-filter="hoodies">HOODIES</button>
+          <button class="filter" data-filter="bottoms">BOTTOMS</button>
+          <button class="filter" data-filter="outerwear">OUTERWEAR</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="manifesto" id="about">
+      <p class="eyebrow">VOID MANIFESTO</p>
+      <h2>LESS NOISE.<br>MORE <span>ATTITUDE.</span></h2>
+      <div class="manifesto-grid">
+        <p>VOID is a fictional premium streetwear concept made for people who treat getting dressed like character development.</p>
+        <p>Heavy fabrics. Relaxed silhouettes. Tiny details. Zero unnecessary motivational quotes on the back.</p>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">DON'T MISS THE NEXT VOID</p>
+      <h2>GET DROP ACCESS<br>BEFORE EVERYONE ELSE.</h2>
+      <form id="newsletterForm">
+        <input type="email" id="emailInput" placeholder="your@email.com" required>
+        <button type="submit">JOIN THE VOID →</button>
+      </form>
+      <p class="fine-print">No spam. We hate notifications too.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="footer-logo footer-brand"><img src="images/void-logo.png" alt="VOID logo"><span>VOID.</span></a>
+    <div class="footer-links">
+      <div><strong>SHOP</strong><a href="#shop">New Drop</a><a href="#shop">All Pieces</a><a href="#">Size Guide</a></div>
+      <div><strong>HELP</strong><a href="#">Shipping</a><a href="#">Returns</a><a href="#">FAQ</a><a href="#">Contact</a></div>
+      <div><strong>SOCIAL</strong><a href="#">Instagram ↗</a><a href="#">TikTok ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 VOID</span><span>MADE SOMEWHERE BETWEEN 2AM & 4AM.</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-head">
+      <h3>YOUR BAG <span id="drawerCount">(0)</span></h3>
+      <button class="close-btn" id="closeCart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="empty-cart" id="emptyCart">
+      <div class="empty-face">◯</div>
+      <h4>IT'S GIVING... EMPTY.</h4>
+      <p>Your bag has less commitment than your situationship.</p>
+      <button class="secondary-btn" id="emptyShopBtn">SHOP THE DROP</button>
+    </div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="subtotal"><span>SUBTOTAL</span><strong id="subtotal">₱0</strong></div>
+      <p>Shipping calculated at checkout.</p>
+      <button class="checkout-btn" id="checkoutBtn">CHECKOUT →</button>
+      <div class="payments">VISA · MASTERCARD · GCASH · MAYA</div>
+    </div>
+  </aside>
+
+  <div class="search-modal" id="searchModal">
+    <button class="close-btn search-close" id="closeSearch">×</button>
+    <p class="eyebrow">FIND YOUR NEXT BAD DECISION</p>
+    <input id="searchInput" type="search" placeholder="SEARCH VOID...">
+    <div id="searchResults" class="search-results"></div>
+  </div>
+
+  <div class="product-modal" id="productModal">
+    <button class="close-btn product-close" id="closeProduct">×</button>
+    <div class="modal-product-art" id="modalArt"></div>
+    <div class="modal-product-info">
+      <p class="eyebrow" id="modalCategory"></p>
+      <h2 id="modalName"></h2>
+      <div class="modal-price" id="modalPrice"></div>
+      <p id="modalDescription" class="modal-description"></p>
+      <div class="size-label"><span>SELECT SIZE</span><button>SIZE GUIDE</button></div>
+      <div class="sizes" id="sizes"></div>
+      <button class="checkout-btn" id="modalAdd">ADD TO BAG — <span id="modalAddPrice"></span></button>
+      <div class="product-notes"><span>✓ PREMIUM HEAVYWEIGHT FABRIC</span><span>✓ LIMITED DROP</span><span>✓ PHILIPPINES SHIPPING</span></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">ADDED TO THE VOID.</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
