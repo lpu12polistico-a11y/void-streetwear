@@ -1,7 +1,7 @@
 const products = [
-  {id:1,name:"VOID GREY ZIP",category:"hoodies",label:"HOODIES",price:2890,badge:"DROP 001",type:"hoodie",image:"images/grey-zip-hoodie.png",desc:"Oversized grey zip hoodie with a relaxed silhouette and understated chest mark."},
-  {id:2,name:"VOID GRAPHIC SET",category:"bottoms",label:"SETS",price:3990,badge:"STATEMENT",type:"pants",image:"images/black-graphic-set.png",desc:"Black oversized hoodie and wide-leg pant concept with high-impact distressed graphics."},
-  {id:3,name:"FREE SPIRIT HOODIE",category:"hoodies",label:"HOODIES",price:3190,badge:"EDITORIAL",type:"hoodie",image:"images/free-spirit-hoodie.png",desc:"Washed black oversized hoodie with expressive script artwork across the back."},
+  {id:1,name:"VOID GREY ZIP",category:"hoodies",label:"HOODIES",price:2890,badge:"DROP 001",type:"hoodie",image:"grey-zip-hoodie.png",desc:"Oversized grey zip hoodie with a relaxed silhouette and understated chest mark."},
+  {id:2,name:"VOID GRAPHIC SET",category:"bottoms",label:"SETS",price:3990,badge:"STATEMENT",type:"pants",image:"black-graphic-set.png",desc:"Black oversized hoodie and wide-leg pant concept with high-impact distressed graphics."},
+  {id:3,name:"FREE SPIRIT HOODIE",category:"hoodies",label:"HOODIES",price:3190,badge:"EDITORIAL",type:"hoodie",image:"free-spirit-hoodie.png",desc:"Washed black oversized hoodie with expressive script artwork across the back."},
   {id:4,name:"NULL ZIP JACKET",category:"outerwear",label:"OUTERWEAR",price:3490,badge:"LIMITED",type:"jacket",desc:"Structured zip jacket with a clean cropped silhouette and understated VOID hardware."},
   {id:5,name:"STATIC WASH TEE",category:"tees",label:"TEES",price:1690,badge:"NEW",type:"tee",desc:"Garment-washed heavyweight tee with a faded charcoal finish. Each piece varies slightly."},
   {id:6,name:"404 SWEATPANTS",category:"bottoms",label:"BOTTOMS",price:2290,badge:"ONLINE ONLY",type:"pants",desc:"Heavy relaxed sweatpants. Soft enough to rot in bed, structured enough to pretend you have plans."}
